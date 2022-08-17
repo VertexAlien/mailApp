@@ -4,11 +4,31 @@ A mail app for Riseup Lab
 
 ## Getting Started
 
-This project is a starting point for a Flutter application.
 
-A few resources to get you started if this is your first Flutter project:
+
+Test in your android device from below link:
 
 - [Android Apk link](https://we.tl/t-KVatQ49Mtk)
+
+
+Packages used in this project:
+
+  cupertino_icons
+  equatable
+  internet_connection_checker
+  chopper
+  chopper_generator
+  dartz
+  google_fonts
+  get
+  getwidget
+  get_it
+  font_awesome_flutter
+  shared_preferences
+  animated_text_kit
+  json_annotation
+  json_serializable
+  intl
 
 
 
