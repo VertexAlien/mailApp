@@ -13,7 +13,7 @@ class MailsController extends GetxController {
 
   RxBool isLoading = false.obs;
 
-  RxList<Mail> mails = RxList<Mail>();
+  List<Mail> mails = [];
 
   Future<void> getAllMails() async {
     isLoading.value = true;
@@ -30,10 +30,11 @@ class MailsController extends GetxController {
             'Something went wrong',
           );
         } else {
+          isLoading.value = false;
           Get.offAll(() => const SignInScreen(), binding: InitialBinding());
         }
       },
-      (r) => mails.value = r,
+      (r) => mails = r,
     );
 
     isLoading.value = false;

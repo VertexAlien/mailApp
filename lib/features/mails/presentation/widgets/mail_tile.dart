@@ -42,7 +42,7 @@ class MailTile extends StatelessWidget {
                   mainAxisAlignment: MainAxisAlignment.spaceBetween,
                   children: [
                     Text(
-                      controller.mails[index].from.name.isNotEmpty ? controller.mails[index].from.name : controller.mails[index].from.address,
+                      controller.mails[index].from.name ?? controller.mails[index].from.address,
                       style: Get.textTheme.headline4,
                     ),
                     Row(

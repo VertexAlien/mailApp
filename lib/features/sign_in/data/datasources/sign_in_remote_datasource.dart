@@ -23,8 +23,6 @@ class SignInRemoteDataSourceImpl extends SignInRemoteDataSource {
 
     if (response.statusCode != 200) throw ServerException();
 
-    print(jsonDecode(response.body)["token"]);
-
     final SharedPreferences prefs = await SharedPreferences.getInstance();
 
     prefs.setString('token', json.decode(response.bodyString)["token"]);

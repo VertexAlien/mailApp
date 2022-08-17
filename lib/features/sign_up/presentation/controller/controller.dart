@@ -55,9 +55,6 @@ class SignUpController extends GetxController {
       return;
     }
 
-    print('${emailController.text}@${domains[selectedDomainIndex.value].domain}');
-    print(passwordController.text);
-
     final result = await signUpUseCase.call(SignUpParams(email: '${emailController.text}@${domains[selectedDomainIndex.value].domain}', password: passwordController.text));
 
     result.fold(
@@ -66,19 +63,19 @@ class SignUpController extends GetxController {
           Get.snackbar(
             'No connection',
             'Please check your internet connection',
-            backgroundColor: Colors.red,
+            backgroundColor: Colors.redAccent,
           );
         } else if (l is AuthorizationFailure) {
           Get.snackbar(
-            'Main already exists',
+            'Mail already exists',
             'Please try with another username',
-            backgroundColor: Colors.red,
+            backgroundColor: Colors.redAccent,
           );
         } else {
           Get.snackbar(
             'Error',
             'Something went wrong',
-            backgroundColor: Colors.red,
+            backgroundColor: Colors.redAccent,
           );
         }
       },

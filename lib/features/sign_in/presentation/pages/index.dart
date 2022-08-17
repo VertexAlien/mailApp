@@ -59,25 +59,16 @@ class SignInScreen extends GetView<SignInController> {
               obscureText: true,
             ),
             const SizedBox(height: 20),
-            // InkWell(
-            //   // onTap: () => Get.to(() => const ForgotPasswordPage()),
-            //   child: Text(
-            //     'Forgot password?',
-            //     textAlign: TextAlign.center,
-            //     style: Get.textTheme.headline6?.copyWith(color: CustomColor.blue),
-            //   ),
-            // ),
             const SizedBox(height: 20),
             GlobalBottomButton(
                 onPressed: () {
-                  // Get.showOverlay(asyncFunction: controller.signIn);
                   controller.signIn();
                 },
                 text: 'Sign in',
                 isSolidButton: true),
             const SizedBox(height: 20),
             Text(
-              'Don’t have an account yet?',
+              'Don’t have a mail account yet?',
               textAlign: TextAlign.center,
               style: GoogleFonts.mulish(
                 fontSize: 16,

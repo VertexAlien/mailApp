@@ -8,7 +8,7 @@ part of 'fromto_model.dart';
 
 FromToModel _$FromToModelFromJson(Map<String, dynamic> json) => FromToModel(
       address: json['address'] as String,
-      name: json['name'] as String,
+      name: json['name'] as String?,
     );
 
 Map<String, dynamic> _$FromToModelToJson(FromToModel instance) =>

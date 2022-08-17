@@ -23,8 +23,6 @@ class MailsRemoteDataSourceImpl implements MailsRemoteDataSource {
 
     if (token == null) throw AuthorizationException();
 
-    print(token);
-
     final response = await restClientService.getMails('Bearer $token', page);
 
     if (response.statusCode == 401) throw AuthorizationException();

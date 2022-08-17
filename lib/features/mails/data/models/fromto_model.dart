@@ -7,7 +7,7 @@ part 'fromto_model.g.dart';
 class FromToModel extends FromTo {
   const FromToModel({
     required String address,
-    required String name,
+    String? name,
   }) : super(
           address: address,
           name: name,
