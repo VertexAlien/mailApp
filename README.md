@@ -13,21 +13,21 @@ Test in your android device from below link:
 
 Packages used in this project:
 
-  -[cupertino_icons]
-  -[equatable]
-  -[internet_connection_checker]
-  -[chopper]
-  -[chopper_generator]
-  -[dartz
-  -[google_fonts]
-  -[get]
-  -[getwidget]
-  -[get_it]
-  -[font_awesome_flutter]
-  -[shared_preferences]
-  -[animated_text_kit]
-  -[json_annotation]
-  -[json_serializable]
+  - [cupertino_icons]
+  - [equatable]
+  - [internet_connection_checker]
+  - [chopper]
+  - [chopper_generator]
+  - [dartz
+  - [google_fonts]
+  - [get]
+  - [getwidget]
+  - [get_it]
+  - [font_awesome_flutter]
+  - [shared_preferences]
+  - [animated_text_kit]
+  - [json_annotation]
+  - [json_serializable]
   - [intl]
 
 
