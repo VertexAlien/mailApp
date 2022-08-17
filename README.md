@@ -8,7 +8,7 @@ A mail app for Riseup Lab
 
 Test in your android device from below link:
 
-- [Android Apk link](https://we.tl/t-KVatQ49Mtk)
+- [Android Apk link](https://we.tl/t-ZvQghJJrkB)
 
 
 Packages used in this project:
